@@ -1,0 +1,36 @@
+<div class="lista-container">
+  <h2>Lista de Usuarios Autorizados</h2>
+
+  @if (cargando) {
+    <div class="estado-texto cargando">Cargando datos desde la API...</div>
+  }
+
+  @if (errorMensaje) {
+    <div class="estado-texto error">{{ errorMensaje }}</div>
+  }
+
+  @if (!cargando && !errorMensaje && listaDatos.length > 0) {
+    <div class="table-responsive">
+      <table>
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Teléfono</th>
+        </tr>
+        </thead>
+        <tbody>
+          @for (item of listaDatos; track item.id) {
+            <tr>
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.phone }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>
