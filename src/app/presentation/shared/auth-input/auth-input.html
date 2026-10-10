@@ -1,0 +1,9 @@
+<div class="input-wrapper">
+  <img [src]="iconPath" alt="icon" class="input-icon" *ngIf="iconPath">
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    class="custom-input"
+    [value]="value"
+    (input)="onInput($event)">
+</div>

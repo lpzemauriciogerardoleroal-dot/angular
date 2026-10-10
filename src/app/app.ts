@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { ValidarAccesoComponent } from './validar-acceso/validar-acceso';
-import { ListarComponent } from './listar/listar';
+import { LoginComponent } from './presentation/features/login/login';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ValidarAccesoComponent, ListarComponent],
+  imports: [LoginComponent],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
-  title = 'validar-acceso-angular';
+  title = 'angular';
 }
+
+export { App as AppComponent };

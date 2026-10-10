@@ -1,0 +1,50 @@
+.login-background {
+  /* Fondo azul base - Para las ondas exactas de la imagen, debes habilitar la línea de abajo
+     cuando tengas el SVG en tu carpeta assets */
+  background-color: #2651CD;
+  /* background-image: url('../../../../assets/waves-bg.svg'); */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif; /* Puedes cambiar esto por la fuente de tu proyecto */
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin-bottom: 40px;
+
+  .logo {
+    width: 80px; /* Ajusta según el tamaño exacto en Figma */
+    height: auto;
+  }
+}
+
+.form-container {
+  width: 100%;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 8px;
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
